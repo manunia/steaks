@@ -1,0 +1,44 @@
+.filterContainer
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+
+  .filter
+    font-family: Montserrat, sans-serif
+    color: #ffffff
+    font-size: 14px /* Приближение из-за подстановки шрифтов */
+    font-weight: 600
+    line-height: 24px /* Приближение из-за подстановки шрифтов */
+    text-align: right
+  .filter:before
+    content: "\f0b0" /* добавляем иконку дом */
+    font-family: FontAwesome, sans-serif
+    color: #ffffff
+    margin-right: 10px
+
+  .shows
+    font-family: Montserrat, serif
+    color: #ffffff
+    font-size: 14px /* Приближение из-за подстановки шрифтов */
+    font-weight: 400
+    line-height: 24px /* Приближение из-за подстановки шрифтов */
+    text-align: right
+    margin-left: 51px
+
+
+.sorting
+  font-family: Montserrat, serif
+  color: #ffffff
+  font-size: 14px /* Приближение из-за подстановки шрифтов */
+  font-weight: 400
+  line-height: 24px /* Приближение из-за подстановки шрифтов */
+  text-align: left
+.sorting:after
+  content: ""
+  border-right: solid 1px  #ffffff
+  border-bottom: solid 1px  #ffffff
+  width: 9px
+  height: 9px
+  display: inline-block
+  transform: rotate(45deg)
+  margin-left: 11px
