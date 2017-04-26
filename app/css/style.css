@@ -5816,6 +5816,9 @@ button.close {
   src: url("../fonts/GOUDYSTO.eot#GoudyStout") format("svg");
   src: url("../fonts/GOUDYSTO.ttf") format("truetype");
   src: url("../fonts/GOUDYSTO.woff") format("woff"); }
+@font-face {
+  font-family: Socialico;
+  src: url("../fonts/Socialico/Socialico.ttf"); }
 .redtop {
   color: #ffffff;
   min-height: 74px;
@@ -5936,10 +5939,12 @@ button.close {
   background-image: url("../images/wavyline.png"); }
 
 .mainhead_backgr {
-  background-image: url("../images/background.jpg"); }
+  background-image: url("../images/background.jpg");
+  background-size: cover; }
 
 .mainhead_header {
-  background-image: url("../images/background&foto.jpg"); }
+  background-image: url("../images/background&foto.jpg");
+  background-size: cover; }
 
 .wavybottom {
   height: 7px;
@@ -5986,7 +5991,7 @@ button.close {
     color: #b71c1c; }
 
 .logo-sm {
-  font-family: Kadwa;
+  font-family: Kadwa, serif;
   color: #fff;
   font-size: 12px;
   font-weight: 400;
@@ -5994,7 +5999,7 @@ button.close {
   margin-top: 6px; }
 
 .navbar-nav {
-  font-family: Kadwa;
+  font-family: Kadwa, serif;
   font-size: 16px;
   font-weight: 400; }
 
@@ -6274,6 +6279,51 @@ footer {
 
 .footer {
   background: url("../images/background_fill.png"); }
+
+.information {
+  padding: 35px 0 80px 0; }
+
+.information_articleHead {
+  font-family: Kadwa, serif;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: left;
+  margin-bottom: 44px; }
+
+.information_article {
+  font-family: Montserrat, sans-serif;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left; }
+  .information_article span {
+    font-weight: 900; }
+
+.followUs_wrap {
+  text-align: left;
+  padding-top: 12px; }
+  .followUs_wrap img {
+    margin-right: -4px; }
+
+.resentPosts_article {
+  margin-bottom: 26px; }
+
+.fedCowboy_article {
+  margin-bottom: 26px; }
+
+.socialsIcons {
+  font-family: Socialico, sans-serif;
+  font-size: 48px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  text-align: center;
+  margin-top: 23px; }
+  .socialsIcons .socialsIcons_icon {
+    margin-left: 19px; }
 
 /*media-request */
 @media only screen and (max-width: 767px) {
