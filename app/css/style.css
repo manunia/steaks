@@ -6112,15 +6112,10 @@ header {
   padding-bottom: 33px;
   border-bottom: solid 2px #f44336; }
 
-.filterInform {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
-
 .filterContainer {
   display: flex;
   flex-direction: row;
-  justify-content: space-between; }
+  justify-content: flex-start; }
   .filterContainer .filter {
     font-family: Montserrat, sans-serif;
     color: #ffffff;
@@ -6148,7 +6143,9 @@ header {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
-  text-align: left; }
+  text-align: left;
+  display: flex;
+  justify-content: flex-end; }
 
 .sorting:after {
   content: "";
@@ -6158,13 +6155,13 @@ header {
   height: 9px;
   display: inline-block;
   transform: rotate(45deg);
-  margin-left: 11px; }
+  margin-left: 11px;
+  margin-top: 5px; }
 
 .littleNav {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  margin-left: 270px; }
+  justify-content: flex-start; }
   .littleNav .littleNav_liink {
     font-family: Montserrat, serif;
     color: #ff5722;
@@ -6193,7 +6190,7 @@ header {
   display: flex;
   flex-direction: column;
   flex-flow: wrap;
-  justify-content: center;
+  justify-content: space-around;
   padding: 40px 0 76px 0; }
 
 .product {

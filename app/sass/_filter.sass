@@ -1,7 +1,7 @@
 .filterContainer
   display: flex
   flex-direction: row
-  justify-content: space-between
+  justify-content: flex-start
 
   .filter
     font-family: Montserrat, sans-serif
@@ -33,6 +33,8 @@
   font-weight: 400
   line-height: 24px /* Приближение из-за подстановки шрифтов */
   text-align: left
+  display: flex
+  justify-content: flex-end
 .sorting:after
   content: ""
   border-right: solid 1px  #ffffff
@@ -42,3 +44,4 @@
   display: inline-block
   transform: rotate(45deg)
   margin-left: 11px
+  margin-top: 5px
