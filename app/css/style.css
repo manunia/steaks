@@ -6128,6 +6128,13 @@ header {
     font-family: FontAwesome, sans-serif;
     color: #ffffff;
     margin-right: 10px; }
+  .filterContainer .filter__back {
+    font-family: Montserrat, sans-serif;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: right; }
   .filterContainer .shows {
     font-family: Montserrat, serif;
     color: #ffffff;
@@ -6161,7 +6168,8 @@ header {
 .littleNav {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start; }
+  justify-content: flex-start;
+  margin-bottom: 29px; }
   .littleNav .littleNav_liink {
     font-family: Montserrat, serif;
     color: #ff5722;
@@ -6202,42 +6210,61 @@ header {
   .product .productImage {
     width: 262px;
     height: 252px; }
-  .product .productHead {
-    font-family: Kadwa, sans-serif;
-    color: #f44336;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 52px;
-    text-align: center; }
-  .product .productArticle {
-    font-family: Montserrat, sans-serif;
-    color: #ffffff;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: center; }
-    .product .productArticle span {
-      font-weight: 700; }
-  .product .productPrice {
-    font-family: Kadwa, serif;
-    color: #f44336;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 62px;
-    text-align: center; }
-  .product .product__button {
-    border-radius: 50px;
-    border-color: #fee7e7;
-    background: none;
-    color: #fee7e7;
-    margin-top: 30px;
-    font-family: Montserrat, sans-serif;
-    width: 150px;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 24px;
-    text-align: center;
-    opacity: 0; }
+
+.productHead {
+  font-family: Kadwa, sans-serif;
+  color: #f44336;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 52px;
+  text-align: center; }
+
+.productHead__big {
+  font-size: 28px;
+  margin-bottom: 17px; }
+
+.productHead__left {
+  text-align: left; }
+
+.productArticle {
+  font-family: Montserrat, sans-serif;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center; }
+  .productArticle span {
+    font-weight: 700; }
+
+.productArticle__left {
+  text-align: left;
+  margin-bottom: 14px; }
+
+.productPrice {
+  font-family: Kadwa, serif;
+  color: #f44336;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 62px;
+  text-align: center; }
+
+.productPrice__left {
+  text-align: left;
+  margin-top: 12px; }
+
+.product__button {
+  border-radius: 50px;
+  border-color: #fee7e7;
+  background: none;
+  color: #fee7e7;
+  margin-top: 30px;
+  font-family: Montserrat, sans-serif;
+  width: 150px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+  opacity: 0; }
 
 .product:hover {
   border: solid 2px #f44336; }
@@ -6323,6 +6350,91 @@ footer {
   margin-top: 23px; }
   .socialsIcons .socialsIcons_icon {
     margin-left: 19px; }
+
+.rank {
+  display: flex;
+  justify-content: center; }
+  .rank .rank_left {
+    width: 50px;
+    height: 50px;
+    background: url("../images/one_product/prev.svg") no-repeat center; }
+  .rank .rank_right {
+    margin-left: 19px;
+    width: 50px;
+    height: 50px;
+    background: url("../images/one_product/prev.svg") no-repeat center;
+    transform: rotate(180deg); }
+
+.produktPreview {
+  margin-top: 80px; }
+
+.produktMark img {
+  margin-right: 9px; }
+
+.customHead {
+  border: none;
+  font-family: Montserrat, serif;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 12px;
+  text-align: left; }
+
+.label {
+  font-family: Montserrat, serif;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: right;
+  margin-right: 15px; }
+
+.checkbox {
+  display: none; }
+
+.checkbox-custom {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #f44336;
+  border-radius: 50%; }
+
+.checkbox-custom, .label {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 21px; }
+
+.checkbox:checked + .checkbox-custom::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url("../images/one_product/checkbox_active.svg") no-repeat center;
+  border-radius: 50%; }
+
+.number {
+  font-family: Montserrat, sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: right;
+  float: left; }
+
+.min {
+  background: url("../images/one_product/min.svg") no-repeat center;
+  width: 18px;
+  height: 18px;
+  float: left; }
+
+.max {
+  background: url("../images/one_product/max.svg") no-repeat center;
+  width: 18px;
+  height: 18px;
+  float: left; }
 
 /*media-request */
 @media only screen and (max-width: 767px) {
